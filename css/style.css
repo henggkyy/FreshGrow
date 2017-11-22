@@ -10,6 +10,15 @@
 .navbar-default {
     background-color: #d1e0e0;
 }
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
 .navbar-default .navbar-nav > li > a {
     color: #1f2e2e;
     padding-left: 15px;
@@ -124,6 +133,12 @@
     border : none;
     color : #1f2e2e;
     font-weight: bold;
+}
+.list-group li{
+    border : none;
+    color : #1f2e2e;
+    font-weight: bold;
+    text-align: center;
 }
 .list-group a:hover{
     border : 3px solid #95b7b7;

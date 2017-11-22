@@ -3,10 +3,164 @@
 <head>
 	<title>FreshGrow - User Profile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-	<script src="../..js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/font-awesome.min.css" type="text/css">
+
+	
+	<script type="text/javascript" src="../../js/plugins.js"></script>
+
+	<script type="text/javascript" src="../../js/main.js"></script>
+	<script type="text/javascript" src="../../js/modernizr.js"></script>
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
 </head>
 <body>
+	<!--HEADER-->
+	<div class="header">
+		<nav class="navbar navbar-default" style="margin-bottom: 0px;">
+			<div class="container-fluid">
+				<div class="col-md-12">
+					<div class="col-md-3">
+						<div class="navbar-header">
+							<a href="../../index.html"><img style="height: 100px;" src="../../image/logo.png"></a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<ul style="margin-top: 50px;" class="nav navbar-nav">
+							<li class="active" style="margin: auto"><a href="#">Home</a></li>
+							<li><a href="#">Job</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Beasiswa</a></li>
+						</ul>
+					</div>
+					<div style="margin-top: 65px;" class="col-md-2">
+						<a style="margin-right: 20px;" href="profile.html" data-toggle="modal" data-target="#register-modal" id="register-link">Hi, matthewmete!</a>
+						<a href="../../index.html" data-toggle="modal" data-target="#login-modal">Logout</a>
+					</div>
+					<div class="row" style="margin-top: 55px;">
+						<div class="col-xs-6 col-md-3">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!--MAIN CONTENT-->
+	<div class="container-fluid">
+		<div class="media">
+			<div class="media-left text-center">
+				<img src="../../image/mete.png" class="media-object" style="width:250px; height: 250px;">
+				
+				<p class="text-center" style="margin-top: 8px; font-size: 18px; font-family: verdana;"><a href="" ><span class="glyphicon glyphicon-pencil"></span>  Edit Profile</a></p>
+				<button class="btn btn-info" style="width: 120px; height: 50px;">Inbox</button>
+			</div>
+			<div class="media-body">
+				<h2 class="media-heading text-center" style="color: #000033; font-family: verdana;">Matthew Alvredo</h2>
+				<hr class="ruler">
+				<p class="text-center" style="font-family: verdana; font-size: 20px; font-weight: bold;">Student - Universitas Katolik Parahyangan </p>
+				<p class="text-center" style="font-family: verdana; font-size: 17px;font-weight: bold;">Bandung, Indonesia</p>
+				<p class="text-center" style="font-family: verdana; font-size: 14px;">Saat ini saya aktif sebagai mahasiswa Program Studi Teknik Informatika UNPAR. Mata  kuliah yang sangat menginspirasi saya adalah mata kuliah Pengantar Sistem Cerdas. Saya sangat tertarik terhadap Artifial Intelligence. Saya mempunyai cita - cita untuk membangun sistem menyerupai Jarvis untuk rumah saya kelak.</p>
+			</div>
+		</div>
+		<!--CONTENT PENGALAMAN/PENDIDIKAN-->
+		<div class="col-md-4">
+			<div class="panel-group" style="margin-top: 50px;">
+				<div class="panel panel-info">
+					<div class="panel-heading text-center"><h3>Pendidikan</h3></div>
+					<div class="panel-body text-center" style="background-color: #e6f7ff">
+						<ul class="list-group">
+							<li class="list-group-item" style="background-color: #e6f7ff">1. SD BPK Penabur 1 Bandung</li>
+							<li class="list-group-item" style="background-color: #e6f7ff">2. SMP BPK Penabur 1 Bandung</li>
+							<li class="list-group-item" style="background-color: #e6f7ff">3. SMA Santo Aloysius Bandung</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" style="margin-top: 50px;">
+				<div class="panel panel-info">
+					<div class="panel-heading text-center"><h3>Pengalaman</h3></div>
+					<div class="panel-body text-center">
+						<ul class="list-group">
+							<li class="list-group-item">1. Front End Developer Tiang Listrik Game</li>
+							<li class="list-group-item">2. Admin Website AIndonesia</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--CONTENT REKOMENDASI-->
+		<div class="col-md-4">
+			<h3 class="text-center" style="font-family: verdana;">Rekomendasi</h3>
+			<hr class="ruler">
+			<div class="media">
+				<div class="media-left">
+					<img src="../../image/epen.png" class="media-object img-circle" style="width:60px">
+				</div>
+				<div class="media-body">
+					<h4 class="media-heading" style="font-family: verdana; font-weight: bold;">Stephen Senjaya</h4>
+					<p>Matthew Alvredo adalah orang yang sangat professional dalam hal kerja di dalam tim. Terlebih dalam mengerjakan tugas akhir Pengantar Sistem Cerdas.</p>
+				</div>
+			</div>
+		</div>
+		<!--CONTENT FORUM USER-->
+		<div class="col-md-4">
+			<h3 class="text-center" style="font-family: verdana;">Forum Activity</h3>
+			<hr class="ruler">
+		</div>
 
+	</div>
+	<!--FOOTER-->
+	<footer id="myFooter" class="col-sm-12">
+		<div class="container">
+			<div class="row" style="margin: 0px;">
+				<div class="col-sm-3">
+					<h2 class="logo"><a href="../../index.html"><img src="../../image/logo.png" style="width: 150px; height: 120px;"> </a></h2>
+				</div>
+				<div class="col-sm-2">
+					<h5>Get started</h5>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h5>About us</h5>
+					<ul>
+						<li><a href="#">FreshGrow Information</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h5>Support</h5>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Help desk</a></li>
+						<li><a href="#">Forums</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="social-networks">
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+					</div>
+					<button type="button" class="btn btn-success">Contact us</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<p>© 2017 Copyright PT. Fresh Maju Wisuda</p>
+		</div>
+	</footer>
 </body>
 </html>
