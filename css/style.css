@@ -69,6 +69,9 @@
 .container{
 	
 }
+#job-info{
+  border: none;
+}
 #job-content{
 	border-left: 1px solid #95b7b7;
 	border-right: 1px solid #95b7b7;
