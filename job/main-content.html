@@ -13,66 +13,108 @@
 </head>
 <body>
 	<!--HEADER-->
-	<div class="header">
-		<nav class="navbar navbar-default" style="margin-bottom: 0px;">
+	<div class="header ">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
-				<div class="col-md-12">
-					<div class="col-md-3">
-						<div class="navbar-header">
-							<a href="index.html"><img style="height: 100px;" src="../image/logo.png"></a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<ul style="margin-top: 50px;" class="nav navbar-nav">
-							<li class="active" style="margin: auto"><a href="#">Home</a></li>
-							<li><a href="#">Job</a></li>
-							<li><a href="#">Forum</a></li>
-							<li><a href="#">Beasiswa</a></li>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img class="navbar-brand" src="../image/logo_fix.png">
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class=""><a href="../index.html">Home</a></li>
+						<li class=""><a href="../forum/home-forum.html">Forum</a></li>
+						<li class="active"><a href="main-list.html">Job</a></li>
+						<li class=""><a href="../beasiswa/main-page.html">Scholarship</a></li>
+					</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#" data-toggle="modal" data-target="#register-modal">Register!</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+							<li style="margin-top: 5px;">
+								<form action="" class="search-form">
+									<div class="form-group has-feedback">
+										<label for="search" class="sr-only">Search</label>
+										<input type="text" class="form-control" name="search" id="search" placeholder="search">
+										<span class="glyphicon glyphicon-search form-control-feedback"></span>
+									</div>
+								</form>
+							</li>
 						</ul>
 					</div>
-					<div style="margin-top: 65px;" class="col-md-2">
-						<a style="margin-right: 50px;" href="" data-toggle="modal" data-target="#register-modal" id="register-link">Register</a>
-						<a href="" data-toggle="modal" data-target="#login-modal">Login</a>
-					</div>
-					<div class="row" style="margin-top: 55px;">
-						<div class="col-xs-6 col-md-3">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<span class="glyphicon glyphicon-search"></span>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					
+				</div>
+			</nav>
+		</div>
+		<div id="main-content" style="margin-top: 80px ">
+			<!--BREADCRUMBS-->
+			<nav aria-label="breadcrumb" role="navigation">
+				<ol class="breadcrumb" style="margin: 0px;">
+					<li class="breadcrumb-item " aria-current="page"><a href="../index.html">Home</a></li>
+					<li class="breadcrumb-item " aria-current="page"><a href="main-list.html"> Jobs</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Details</li>
+
+				</ol>
+			</nav>
+			<!-- Title -->
+			<div class="col-md-12 text-center"> 
+				<h2>Di Butuhkan Software Developer untuk PT Maju Bersama</h2>
+				<hr class="ruler">
+			</div>
+
+			<!-- Title -->
+			<div class="col-md-12"  > 
+				<font style="font-weight: bold;font-size: 30px" >Company Information : </font>
+			</div>
+			<!-- job-info -->
+			<div class="job-info">	
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<p style="font-size: 20px">
+						Company<br>
+						Position<br>
+						Location<br>
+						Compary Description<br>
+						Salary<br>
+						Deadline
+					</p>
+				</div>
+
+				<div class="col-md-7" style="font-size: 20px">
+					: <a href="../user/company/profile.html">PT Maju bersama</a><br>
+					: Software Developer<br>
+					: Bandung<br>
+					: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+					: Rp. 3.500.000,00<br>
+					: 30 November 2017
 				</div>
 			</div>
-		</nav>
-	</div>
-	<div id="main-content" style="margin-top: 75px">
-		<!--BREADCRUMBS-->
-		<nav aria-label="breadcrumb" role="navigation">
-			<ol class="breadcrumb" style="margin: 0px;">
-				<li class="breadcrumb-item " aria-current="page"><a href="../index.html">Home</a></li>
-				<li class="breadcrumb-item " aria-current="page"><a href="main-list.html"> Jobs</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Details</li>
+			<!--Requirement -->
+			<div class="col-md-12">
+				<p style="font-size: 25px; font-weight: bold">
+					Requirement
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-11 " style="font-size: 20px">
+				-Javascript<br>
+				-PHP<br>
+				-HTML<br>
+				-CSS<br>
+				-Laravel<br>
 
-			</ol>
-		</nav>
+			</div>
+			<!-- Button -->
+			<div class="col-sm-2 text-center">
+				<button> <a href="main-list.html">Back</a></button>
+			</div>
+			<div class="col-sm-8"></div>
+			<div class="col-sm-2 text-center">
 
-		<!--combo box-->
-		<div class="dropdown">
-			<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
-					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-				</ul>
+				<button style="size: 10px">Apply</button>
 			</div>
 			<!--FOOTER-->
 			<footer id="myFooter" class="col-sm-12">
