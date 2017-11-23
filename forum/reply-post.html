@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FreshGrow - Reply Post</title>
+	<title>FreshGrow - Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+	
+	<script type="text/javascript" src="../js/plugins.js"></script>
+
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/modernizr.js"></script>
+
 </head>
 <body>
+	<!--HEADER-->
+	<div class="header ">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img class="navbar-brand" src="../image/logo_fix.png">
+				</div>
 
-</body>
-</html>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="../index.html">Home</a></li>
+						<li><a href="#">Forum</a></li>
+						<li><a href="#">Job</a></li>
+						<li><a href="#">Scholarship</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-toggle="modal" data-target="#register-modal">Hello, matthewmette!</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#login-modal">Logout</a></li>
+						<li style="margin-top: 5px;">
+							<form action="" class="search-form">
+								<div class="form-group has-feedback">
+									<label for="search" class="sr-only">Search</label>
+									<input type="text" class="form-control" name="search" id="search" placeholder="search">
+									<span class="glyphicon glyphicon-search form-control-feedback"></span>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<!--MAIN CONTENT-->
+	<div id="main-content" style="margin-top: 75px">
+		<!--BREADCRUMBS-->
+		<nav aria-label="breadcrumb" role="navigation">
+			<ol class="breadcrumb" style="margin: 0px;">
+				<li class="breadcrumb-item" aria-current="page"><a href="../index.html">Home</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="">Forum</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="">Company</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="main-content.html">Penjelasan PT. Maju Bersama</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Reply Post</li>
+			</ol>
+		</nav>
+		<!--Categories Box-->
+		<div class="dropdown">
+			<button class="dropbtn" type="button" data-toggle="dropdown">Forum Categories
+				<span class="caret"></span></button>
+				<ul class="dropdown-content">
+					<a href="#">Basic Skill</a>
+					<a href="#">Job Position</a>
+					<a href="#">Company</a>
+				</ul>
+			</div>
+			<!--CONTENT-->
+			
+			<div class="container" style="border : 1px solid black; background-color: white;margin-bottom: 10px;">
+				<h3 class="text-center"><span style="font-weight: bold;">Reply To :  </span><a href="main-content.html">Penjelasan PT. Maju Bersama</a></h3>
+				<hr class="ruler">
+				<div class="form-group">
+					<label for="usr" style="font-size: 20px;">Title :</label>
+					<input type="text" class="form-control" id="usr">
+					
+					<label for="usr" style="font-size: 20px;">Body :</label>
+					<div class="row" style="border : 1px solid grey; margin: 10px; padding: 10px;">
+						<div id="divider2">
+							<span class="glyphicon glyphicon-bold"></span>
+							<span class="glyphicon glyphicon-italic"></span>
+							<span class="glyphicon glyphicon-font"></span>
+						</div>
+						<div id="divider2">
+							<span class="glyphicon glyphicon-align-left"></span>
+							<span class="glyphicon glyphicon-align-center"></span>
+							<span class="glyphicon glyphicon-align-right"></span>
+							<span class="glyphicon glyphicon-align-justify"></span>
+						</div>
+					</div>
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+				<button onclick="window.location.href='main-content.html'" type="button" class="btn btn-primary" style="float: right; margin: 10px; width: 150px; font-size: 15px;">Post</button>
+				<button onclick="window.location.href='main-content.html'" type="button" class="btn btn-danger" style="float: right; margin: 10px;">CANCEL</button>
+				
+			</div>
+			
+			
+		</div>
+		<!--FOOTER-->
+		<footer id="myFooter" class="col-sm-12">
+			<div class="container">
+				<div class="row" style="margin: 0px;">
+					<div class="col-sm-3">
+						<h2 class="logo"><a href="../index.html"><img src="../image/logo.png" style="width: 150px; height: 120px;"> </a></h2>
+					</div>
+					<div class="col-sm-2">
+						<h5>Get started</h5>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Register</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>About us</h5>
+						<ul>
+							<li><a href="#">FreshGrow Information</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Support</h5>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Help desk</a></li>
+							<li><a href="#">Forums</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<div class="social-networks">
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+						</div>
+						<button type="button" class="btn btn-success">Contact us</button>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p>© 2017 Copyright PT. Fresh Maju Wisuda</p>
+			</div>
+		</footer>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</body>
+	</html>
