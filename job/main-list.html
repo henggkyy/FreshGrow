@@ -14,47 +14,45 @@
 </head>
 <body>
 	<!--HEADER-->
-	<div class="header">
-		<nav class="navbar navbar-default" style="margin-bottom: 0px;">
+	<div class="header ">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
-				<div class="col-md-12">
-					<div class="col-md-3">
-						<div class="navbar-header">
-							<a href="index.html"><img style="height: 100px;" src="../image/logo.png"></a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<ul style="margin-top: 50px;" class="nav navbar-nav">
-							<li class="active" style="margin: auto"><a href="#">Home</a></li>
-							<li><a href="#">Job</a></li>
-							<li><a href="#">Forum</a></li>
-							<li><a href="#">Beasiswa</a></li>
-						</ul>
-					</div>
-					<div style="margin-top: 65px;" class="col-md-2">
-						<a style="margin-right: 50px;" href="" data-toggle="modal" data-target="#register-modal" id="register-link">Register</a>
-						<a href="" data-toggle="modal" data-target="#login-modal">Login</a>
-					</div>
-					<div class="row" style="margin-top: 55px;">
-						<div class="col-xs-6 col-md-3">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<span class="glyphicon glyphicon-search"></span>
-									</button>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img class="navbar-brand" src="../image/logo_fix.png">
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class=""><a href="../index.html">Home</a></li>
+						<li class=""><a href="../forum/home-forum.html">Forum</a></li>
+						<li class="active"><a href="main-list.html">Job</a></li>
+						<li class=""><a href="../beasiswa/main-page.html">Scholarship</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-toggle="modal" data-target="#register-modal">Register!</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+						<li style="margin-top: 5px;">
+							<form action="" class="search-form">
+								<div class="form-group has-feedback">
+									<label for="search" class="sr-only">Search</label>
+									<input type="text" class="form-control" name="search" id="search" placeholder="search">
+									<span class="glyphicon glyphicon-search form-control-feedback"></span>
 								</div>
-							</div>
-						</div>
-					</div>
-					
+							</form>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
 	<!--BREADCRUMBS-->
 	
-	<div id="main-content" style="">
+	<div id="main-content" style="margin-top: 80px">
 		<!--combo box-->
 		<nav aria-label="breadcrumb" role="navigation">
 			<ol class="breadcrumb" style="margin: 0px;">
