@@ -14,7 +14,6 @@
     border :1px solid #000000;
 }
 .panel > .panel-heading {
-    background-image: none;
     background-color: white;
     color: black;
 }
@@ -23,36 +22,33 @@
     border: 0;
     box-shadow: 0 10px 10px -10px #95b7b7 inset;
 }
-.navbar-default {
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
     background-color: #d1e0e0;
+    color: #FFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+.navbar-brand{
+    float:left;
+    min-height: 55px;
+    padding: 0 15px 5px;
 }
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-.navbar-default .navbar-nav > li > a {
-    color: #1f2e2e;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: verdana;
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus , .navbar-inverse .navbar-nav .active a:hover{
+    background-color: #d1e0e0;
+    color: #3d5c5c;
     font-weight: bold;
 }
-.navbar.navbar-default .navbar-nav > .active > a,
-.navbar.navbar-default .navbar-nav > .active > a:hover,
-.navbar.navbar-default .navbar-nav > .active > a:focus {
-  color: #000033;
-  background-color: #95b7b7;
-  border: 1px solid #95b7b7;
+.navbar-inverse .navbar-nav li a:hover{
+    color: #0a0f0f;
+    border-bottom: 3px solid #0a0f0f;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #000000;
-    border-bottom: 3px solid #95b7b7;
+.navbar-inverse .navbar-nav li a{
+    color: #527a7a;
 }
+
 #txtSearch{
 	width: 60%;
 	float: right;
@@ -210,14 +206,14 @@ body{
 }
 
 .content{
-   flex: 1 0 auto;
-   -webkit-flex: 1 0 auto;
-   min-height: 200px;
+ flex: 1 0 auto;
+ -webkit-flex: 1 0 auto;
+ min-height: 200px;
 }
 
 #myFooter{
-   flex: 0 0 auto;
-   -webkit-flex: 0 0 auto;
+ flex: 0 0 auto;
+ -webkit-flex: 0 0 auto;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -293,7 +289,7 @@ body{
    #    override the bootstrap configs     #
    ######################################### */
 
-.modal-backdrop.in {
+   .modal-backdrop.in {
     filter: alpha(opacity=50);
     opacity: .8;
 }
@@ -359,5 +355,55 @@ body{
 
 .form-control {
   border-radius: 0px;
+}
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
 }
 
