@@ -9,14 +9,14 @@
   border-right: 5px solid #64b5f6;
   margin-top : 40px;
 }
+
+.panel{
+    border :1px solid #000000;
+}
 .panel > .panel-heading {
     background-image: none;
     background-color: white;
     color: black;
-
-}
-.panel{
-    border :1px solid #000000;
 }
 .ruler{
     height: 10px;
