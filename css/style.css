@@ -409,4 +409,59 @@ body{
   left: initial;
   font-size: 14px;
 }
+.dropbtn {
+   background-color: #f2f2f2;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #95b7b7;
+}
+
+#divider{
+    border-right : 1px solid #d1e0e0;
+}
+#ket-posted{
+    background-color: #0073e6;
+}
+#ket-posting{
+    color: white;
+    margin-left: 30px;
+}
+#divider2{
+    border-right: 1px solid grey;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 80px;
+    display: inline;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FreshGrow - List Forum</title>
+	<title>FreshGrow - Forum Company</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/style.css">
@@ -9,6 +9,8 @@
 	<script type="text/javascript" src="../js/plugins.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
 	<script type="text/javascript" src="../js/modernizr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<!--HEADER-->
@@ -21,32 +23,179 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<img class="navbar-brand" src="../image/logo_fix.png">
+					<a href="../index.html"><img class="navbar-brand" src="../image/logo_fix.png"></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li class=""><a href="../index.html">Home</a></li>
-						<li class="active"><a href="home-forum.html">Forum</a></li>
+						<li class="active"><a href="categories.html">Forum</a></li>
 						<li class=""><a href="../job/main-list.html">Job</a></li>
 						<li class=""><a href="../beasiswa/main-page.html">Scholarship</a></li>
 					</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#" data-toggle="modal" data-target="#register-modal">Register!</a></li>
-							<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-							<li style="margin-top: 5px;">
-								<form action="" class="search-form">
-									<div class="form-group has-feedback">
-										<label for="search" class="sr-only">Search</label>
-										<input type="text" class="form-control" name="search" id="search" placeholder="search">
-										<span class="glyphicon glyphicon-search form-control-feedback"></span>
-									</div>
-								</form>
-							</li>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../user/member/profile.html">Hello, matthewmette!</a></li>
+						<li><a href="../index.html">Logout</a></li>
+						<li style="margin-top: 5px;">
+							<form action="" class="search-form">
+								<div class="form-group has-feedback">
+									<label for="search" class="sr-only">Search</label>
+									<input type="text" class="form-control" name="search" id="search" placeholder="search">
+									<span class="glyphicon glyphicon-search form-control-feedback"></span>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!--BREADCRUMBS-->
+	
+	<div id="main-content" style="margin-top: 80px">
+		<!--combo box-->
+		<nav aria-label="breadcrumb" role="navigation">
+			<ol class="breadcrumb" style="margin: 0px;">
+				<li class="breadcrumb-item " aria-current="page"><a href="../index.html">Home</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="categories.html">Forum</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Company</li>
+			</ol>
+		</nav>
+		<!-- dropdown -->
+		<div class="dropdown col-md-1 text-center">
+			<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Forum Categories
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basic Skill</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Job Position</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Company</a></li>
+				</ul>
+			</div>
+
+			
+
+			<!-- List Forum -->
+			<div class="container">
+				<div class="container-fluid">
+					<h3 class="text-center">Forum - Company</h3>
+					<hr class="ruler">
+					<div class="container"> 
+						<button class="btn btn-info" onclick="window.location.href='ask.html'">ASK A QUESTION</button>
+						<ul class="pagination" style="float: right; margin-right: 50px;">
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">>></a></li>
 						</ul>
 					</div>
 				</div>
-			</nav>
+
+				<div class="row" style="margin: 10px; border : 2px solid #d1e0e0;background-color: white;">
+
+					<div class="container">
+						<h3 style="display: block;"><a href="main-content.html">Penjelasan PT. Maju Bersama</a></h3>
+						<h5>Terkait Permasalahan yang Bapak Matthew Alami.</h5>
+					</div>
+					<div class="col-md-13" id="ket-posted">
+						<p id="ket-posting"><span style="font-weight: bold;">Latest Post</span> : 22/11/2017 18.43PM <br><span style="font-weight: bold;">Views : </span> 512 <br><span style="font-weight: bold;">Replies</span> : 10</p>
+						
+					</div>
+				</div>
+				<div class="row" style="margin: 10px; border : 2px solid #d1e0e0;background-color: white;">
+
+					<div class="container">
+						<h3 style="display: block;"><a href="main-content.html">[ASK] Bekerja di Tokomedia</a></h3>
+						<h5>Bertanya mengenai suasana pekerjaan di PT. Tokomedia</h5>
+					</div>
+					<div class="col-md-13" id="ket-posted">
+						<p id="ket-posting"><span style="font-weight: bold;">Latest Post</span> : 21/11/2017 21.43PM <br><span style="font-weight: bold;">Views : </span> 1020 <br><span style="font-weight: bold;">Replies</span> : 20</p>
+						
+					</div>
+				</div>
+				<div class="row" style="margin: 10px; border : 2px solid #d1e0e0;background-color: white;">
+
+					<div class="container">
+						<h3 style="display: block;"><a href="main-content.html">Suasana Bekerja di Bank BRI</a></h3>
+						<h5>Bertanya mengenai suasana bekerja di Bank BRI</h5>
+					</div>
+					<div class="col-md-13" id="ket-posted">
+						<p id="ket-posting"><span style="font-weight: bold;">Latest Post</span> : 21/11/2017 18.43PM <br><span style="font-weight: bold;">Views : </span> 549 <br><span style="font-weight: bold;">Replies</span> : 5</p>
+						
+					</div>
+				</div>
+				<div class="row" style="margin: 10px; border : 2px solid #d1e0e0;background-color: white;">
+
+					<div class="container">
+						<h3 style="display: block;"><a href="main-content.html">[ASK] Tips Interview di PT. Tokomedia</a></h3>
+						<h5>Bertanya tips untuk melakukan interview di PT. Tokomedia</h5>
+					</div>
+					<div class="col-md-13" id="ket-posted">
+						<p id="ket-posting"><span style="font-weight: bold;">Latest Post</span> : 21/11/2017 16.30PM <br><span style="font-weight: bold;">Views : </span> 2050 <br><span style="font-weight: bold;">Replies</span> : 6</p>
+						
+					</div>
+				</div>
+				<div class="container">
+					<button class="btn btn-info" onclick="window.location.href='ask.html'">ASK A QUESTION</button>
+					<ul class="pagination" style="float: right; margin-right: 50px;">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">>></a></li>
+					</ul>
+				</div>
+			</div>
+
+			
+
+			<!--FOOTER-->
+			<footer id="myFooter" class="col-sm-12">
+				<div class="container">
+					<div class="row" style="margin: 0px;">
+						<div class="col-sm-3">
+							<h2 class="logo"><a href="index.html"><img src="../image/logo.png" style="width: 150px; height: 120px;"> </a></h2>
+						</div>
+						<div class="col-sm-2">
+							<h5>Get started</h5>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Register</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-2">
+							<h5>About us</h5>
+							<ul>
+								<li><a href="#">FreshGrow Information</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-2">
+							<h5>Support</h5>
+							<ul>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Help desk</a></li>
+								<li><a href="#">Forums</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3">
+							<div class="social-networks">
+								<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+							</div>
+							<button type="button" class="btn btn-success">Contact us</button>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p>© 2017 Copyright PT. Fresh Maju Wisuda</p>
+				</div>
+			</footer>
 		</div>
-	</body>
-	</html>
+	</div>
+
+</body>
+</html>
