@@ -23,19 +23,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<img class="navbar-brand" src="../image/logo_fix.png">
+					<a href="../index_after_login.html"><img class="navbar-brand" src="../image/logo_fix.png"></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class=""><a href="../index.html">Home</a></li>
-						<li class=""><a href="../forum/home-forum.html">Forum</a></li>
-						<li class="active"><a href="main-list.html">Job</a></li>
+						<li class=""><a href="../index_after_login.html">Home</a></li>
+						<li class=""><a href="../forum/categories.html">Forum</a></li>
+						<li class="active"><a href="categories.html">Job</a></li>
 						<li class=""><a href="../beasiswa/main-page.html">Scholarship</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#" data-toggle="modal" data-target="#register-modal">Register!</a></li>
-						<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+						<li><a href="../user/company/profile.html">Hello, PT. Maju Bersama!</a></li>
+							<li><a href="../index.html">Logout</a></li>
 						<li style="margin-top: 5px;">
 							<form action="" class="search-form">
 								<div class="form-group has-feedback">
@@ -57,7 +57,8 @@
 		<nav aria-label="breadcrumb" role="navigation">
 			<ol class="breadcrumb" style="margin: 0px;">
 				<li class="breadcrumb-item " aria-current="page"><a href="../index.html">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Jobs</li>
+				<li class="breadcrumb-item " aria-current="page"><a href="../index.html">Jobs</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Software Developer</li>
 			</ol>
 		</nav>
 		<!-- dropdown -->
@@ -70,6 +71,7 @@
 			<hr class="ruler">
 		</div>
 		<div class="container">
+
 			<ul class="pagination" style="float: right; margin-right: 50px;">
 				<li class="active"><a href="#">1</a></li>
 				<li><a href="#">2</a></li>
@@ -77,6 +79,7 @@
 				<li><a href="#">4</a></li>
 				<li><a href="#">>></a></li>
 			</ul>
+			<button style="float: right; margin-top: 15px; margin-right: 10px; padding: 10px;" class="btn btn-danger" onclick="window.location.href='add-job.html'"><span style="font-size: 20px; font-weight: bold">ADD JOB</span></button>
 		</div>
 		<!-- Filter -->
 
@@ -121,13 +124,13 @@
 			</div>
 
 			<!-- List Job -->
-			<div class="col-md-10" style="border-left: 1px solid #95b7b7">
+			<div class="col-md-10" style="border-left: 1px solid #95b7b7; background-color: white;">
 				<div class="col-sm-12 container" style="border: 1px  solid #95b7b7;margin-bottom: 10px">
-					<h3 >
-						<a href="main-content.html">1. Di Butuhkan Software Developer untuk PT Maju Bersama</a>
+					<h3 id="ket-posted" style="padding: 10px;">
+						<a href="main-content.html" style="color: white; padding: 10px;">1. Di Butuhkan Software Developer untuk PT Maju Bersama</a>
 					</h3>
 					<h5 class="col-md-6">
-						Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
+						Company : <a href="../user/company/profile.html">PT Maju Bersama</a>
 					</h5>
 					<h5 class="col-md-6">
 						Salary : 3.500.000,00 
@@ -141,17 +144,17 @@
 
 				</div>
 				<div class="col-sm-12 container" style="border: 1px  solid #95b7b7;margin-bottom: 10px">
-					<h3 >
-						2. Di Butuhkan Software Developer untuk PT Maju Bersama
+					<h3 id="ket-posted" style="padding: 10px;">
+						<a href="main-content.html" style="color: white; padding: 10px;">2. Dicari Front End Developer untuk Aplikasi Game Android</a>
 					</h3>
 					<h5 class="col-md-6">
 						Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
 					</h5>
 					<h5 class="col-md-6">
-						Salary : 3.500.000,00 
+						Salary : 2.500.000,00 
 					</h5>
 					<h5 class="col-md-6">
-						Location : Bandung
+						Location : Jakarta
 					</h5>
 					<h5 class="col-md-6">
 						DeadLine : 30 November 2017 
@@ -159,8 +162,8 @@
 
 				</div>
 				<div class="col-sm-12 container" style="border: 1px  solid #95b7b7;margin-bottom: 10px" >
-					<h3 >
-						3. Di Butuhkan Software Developer untuk PT Maju Bersama
+					<h3 id="ket-posted" style="padding: 10px;">
+						<a href="main-content.html" style="color: white; padding: 10px;">3. Dibutuhkan Back End Developer</a>
 					</h3>
 					<h5 class="col-md-6">
 						Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
@@ -177,8 +180,8 @@
 
 				</div>
 				<div class="col-sm-12 container" style="border: 1px  solid #95b7b7;margin-bottom: 10px">
-					<h3 >
-						4. Di Butuhkan Software Developer untuk PT Maju Bersama
+					<h3 id="ket-posted" style="padding: 10px;">
+						<a href="main-content.html" style="color: white; padding: 10px;">4. Dicari Front End Developer untuk Aplikasi Game Android</a>
 					</h3>
 					<h5 class="col-md-6">
 						Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
@@ -195,8 +198,8 @@
 
 				</div>
 				<div class="col-sm-12 container" style="border: 1px  solid #95b7b7;margin-bottom: 20px;">
-					<h3 >
-						5. Di Butuhkan Software Developer untuk PT Maju Bersama
+					<h3 id="ket-posted" style="padding: 10px;">
+						<a href="main-content.html" style="color: white; padding: 10px;">3. Dicari Software Developer untuk membuat aplikasi</a>
 					</h3>
 					<h5 class="col-md-6">
 						Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
@@ -215,6 +218,7 @@
 			</div>
 			<!-- pagination -->
 			<div class="container">
+
 				<ul class="pagination" style="float: right; margin-right: 50px;">
 					<li class="active"><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
@@ -222,6 +226,7 @@
 					<li><a href="#">4</a></li>
 					<li><a href="#">>></a></li>
 				</ul>
+				<button style="float: right; margin-top: 15px; margin-right: 10px; padding: 10px;" class="btn btn-danger" onclick="window.location.href='add-job.html'"><span style="font-size: 20px; font-weight: bold">ADD JOB</span></button>
 			</div>
 
 			<!--FOOTER-->

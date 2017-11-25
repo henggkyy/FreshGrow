@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FreshGrow - Beasiswa</title>
+	<title>FreshGrow - Scholarship</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/style.css">
@@ -22,19 +22,19 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<img class="navbar-brand" src="../image/logo_fix.png">
+						<a href="../index_after_login.html"><img class="navbar-brand" src="../image/logo_fix.png"></a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
-							<li class=""><a href="../index.html">Home</a></li>
-							<li class=""><a href="../forum/home-forum.html">Forum</a></li>
-							<li class=""><a href="../job/main-list.html">Job</a></li>
+							<li class=""><a href="../index_after_login.html">Home</a></li>
+							<li class=""><a href="../forum/categories.html">Forum</a></li>
+							<li class=""><a href="../job/categories.html">Job</a></li>
 							<li class="active"><a href="main-page.html">Scholarship</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#" data-toggle="modal" data-target="#register-modal">Register!</a></li>
-							<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+							<li><a href="../user/member/profile.html">Hello, matthewmette!</a></li>
+							<li><a href="../index.html">Logout</a></li>
 							<li style="margin-top: 5px;">
 								<form action="" class="search-form">
 									<div class="form-group has-feedback">
@@ -64,20 +64,11 @@
 			</div>
 			<!-- Dropdown -->
 			<div class="dropdown col-md-1 text-center">
-				<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Subject
+				<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Categories
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Accountant</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Architect</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Mechanic</a></li>
-						<li role="presentation" class="divider"></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bartender</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bank Teller</a></li>
-						<li role="presentation" class="divider"></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cashier</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chef</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Computer Programmer</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Computer System Analyst</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dalam Negeri</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Luar Negeri</a></li>
 					</ul>
 				</div>
 				<div class="container">
@@ -92,7 +83,9 @@
 				<!-- Content -->
 				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
 					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
-						<h3><a href="main-content.html">1. Beasiswa Study di Harvard</a></h3>
+						<h3 id="ket-posted" style="padding: 10px;">
+							<a href="main-content.html" style="color: white; padding: 10px;">1. Beasiswa Study di Harvard</a>
+						</h3>
 						<div class="col-md-6">
 							<h5>
 								Bentuk Beasiswa : 100% biaya kuliah
@@ -113,7 +106,55 @@
 				</div>	
 				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
 					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
-						<h3><a href="main-content.html">1. Beasiswa Study di Harvard</a></h3>
+						<h3 id="ket-posted" style="padding: 10px;">
+							<a href="main-content.html" style="color: white; padding: 10px;">2. Beasiswa Biaya Study di Singapura</a>
+						</h3>
+						<div class="col-md-6">
+							<h5>
+								Bentuk Beasiswa : 100% Biaya Studi
+							</h5><br>
+							<h5>
+								Subject : Accounting 
+							</h5>
+						</div>
+						<div class="col-md-6">
+							<h5>
+								Company : <a href="../user/company/profile.html"> Bank BRI</a>
+							</h5><br>
+							<h5>
+								Deadline : 30 November 2017
+							</h5>						
+						</div>
+					</div>
+				</div>	
+				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
+					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
+						<h3 id="ket-posted" style="padding: 10px;">
+							<a href="main-content.html" style="color: white; padding: 10px;">3. Beasiswa Study di Jerman</a>
+						</h3>
+						<div class="col-md-6">
+							<h5>
+								Bentuk Beasiswa : 100% biaya study + Biaya Hidup
+							</h5><br>
+							<h5>
+								Subject : Elektro Mekatronika
+							</h5>
+						</div>
+						<div class="col-md-6">
+							<h5>
+								Company : <a href="../user/company/profile.html">PT. Constuction Inti</a>
+							</h5><br>
+							<h5>
+								Deadline : 19 Desember 2017
+							</h5>						
+						</div>
+					</div>
+				</div>	
+				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
+					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
+						<h3 id="ket-posted" style="padding: 10px;">
+							<a href="main-content.html" style="color: white; padding: 10px;">4. Beasiswa Study di Harvard</a>
+						</h3>
 						<div class="col-md-6">
 							<h5>
 								Bentuk Beasiswa : 100% biaya kuliah
@@ -134,49 +175,10 @@
 				</div>	
 				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
 					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
-						<h3><a href="main-content.html">1. Beasiswa Study di Harvard</a></h3>
-						<div class="col-md-6">
-							<h5>
-								Bentuk Beasiswa : 100% biaya kuliah
-							</h5><br>
-							<h5>
-								Subject : Computer Science
-							</h5>
-						</div>
-						<div class="col-md-6">
-							<h5>
-								Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
-							</h5><br>
-							<h5>
-								Deadline : 25 November 2017
-							</h5>						
-						</div>
-					</div>
-				</div>	
-				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
-					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
-						<h3><a href="main-content.html">1. Beasiswa Study di Harvard</a></h3>
-						<div class="col-md-6">
-							<h5>
-								Bentuk Beasiswa : 100% biaya kuliah
-							</h5><br>
-							<h5>
-								Subject : Computer Science
-							</h5>
-						</div>
-						<div class="col-md-6">
-							<h5>
-								Company : <a href="../user/company/profile.html"> PT Maju Bersama</a>
-							</h5><br>
-							<h5>
-								Deadline : 25 November 2017
-							</h5>						
-						</div>
-					</div>
-				</div>	
-				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px">
-					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
-						<h3><a href="main-content.html">1. Beasiswa Study di Harvard</a></h3>
+						<h3 id="ket-posted" style="padding: 10px;">
+							<a href="main-content.html" style="color: white; padding: 10px;">5. Beasiswa Study di Harvard</a>
+						</h3>
+						
 						<div class="col-md-6">
 							<h5>
 								Bentuk Beasiswa : 100% biaya kuliah
@@ -197,7 +199,9 @@
 				</div>	
 				<div class="col-md-11 " style="border:  1px solid #95b7b7;margin-left: 40px; margin-top: 10px; margin-bottom: 20px">
 					<div class="col-md-11" style="border:  1px solid #95b7b7; margin: 10px;">
-						<h3><a href="main-content.html">1. Beasiswa Study di Harvard</a></h3>
+						<h3 id="ket-posted" style="padding: 10px;">
+							<a href="main-content.html" style="color: white; padding: 10px;">6. Beasiswa Study di Harvard</a>
+						</h3>
 						<div class="col-md-6">
 							<h5>
 								Bentuk Beasiswa : 100% biaya kuliah
