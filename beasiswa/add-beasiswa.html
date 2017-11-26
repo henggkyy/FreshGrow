@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="../js/modernizr.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 	<!--HEADER-->
@@ -29,10 +28,10 @@
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class=""><a href="../index.html">Home</a></li>
+						<li class=""><a href="../index_after_login.html">Home</a></li>
 						<li class=""><a href="../forum/categories.html">Forum</a></li>
-						<li class="active"><a href="categories.html">Job</a></li>
-						<li class=""><a href="../beasiswa/main-page.html">Scholarship</a></li>
+						<li class=""><a href="../job/categories.html">Job</a></li>
+						<li class="active"><a href="main-page.html">Scholarship</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../user/company/profile.html">Hello, PT. Maju Bersama!</a></li>
@@ -56,21 +55,20 @@
 		<nav aria-label="breadcrumb" role="navigation">
 			<ol class="breadcrumb" style="margin: 0px;">
 				<li class="breadcrumb-item " aria-current="page"><a href="../index.html">Home</a></li>
-				<li class="breadcrumb-item " aria-current="page"><a href="main-list.html"> Jobs</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Add Job</li>
-
+				<li class="breadcrumb-item active" aria-current="page"><a href="main-page.html">Scholarship</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Add Scholarship</li>
 			</ol>
 		</nav>
 		<!-- Title -->
 		<div class="col-md-12 text-center"> 
-			<h2>Add Job</h2>
+			<h2>Add Beasiswa</h2>
 			<h4>PT Maju Bersama</h4>
 			<hr class="ruler">
 		</div>
 
 		<!-- Title -->
 		<div class="col-md-12"  > 
-			<font style="font-weight: bold;font-size: 30px" >Company Information : </font>
+			<font style="font-weight: bold;font-size: 30px" >Scholarship Information : </font>
 		</div>
 		<!-- job-info -->
 		<div class="job-info">	
@@ -78,9 +76,10 @@
 			<div class="col-md-10">
 				<p style="font-size: 20px">
 					<p style="font-size: 20px">Title				: <input type="text" name="" style="width: 90%"><br></p>
+					<p style="font-size: 20px">Bentuk beasiswa		: <input type="text" name="" style="width: 80%"><br></p>
 					<div class="dropdown" class="container">
-						<p style="font-size: 20px">Position 			:
-						<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Job
+						<p style="font-size: 20px">Jurusan 			:
+							<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select jurusan
 								<span class="caret"></span></button>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Accountant</a></li>
@@ -97,7 +96,7 @@
 								</ul>
 							</div> </p>		
 							<div class="dropdown" class="container">
-								<p style="font-size: 20px">Location 			:
+								<p style="font-size: 20px">Universitas 			:
 									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Location
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
@@ -113,13 +112,10 @@
 											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Computer System Analyst</a></li>
 										</ul>
 									</div> </p>		
-									<p style="font-size: 20px">Salary	: <input type="number" name=""><br></p>
 									<p style="font-size: 20px">Deadline					: <input type="date" name=""><br></p>
-									<p style="font-size: 20px">Job Description: <input type="text" name=""><br></p>
+									<p style="font-size: 20px">Infomasi Lengkap: <textarea style="width: 100%;height: 150%"> </textarea> <br></p>
 								</p>
 							</div>
-
-
 						</div>
 						<!--Requirement -->
 						<div class="col-md-12">
